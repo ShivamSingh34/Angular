@@ -1,0 +1,35 @@
+<div class="ekart--product--filter">
+  <button (click)="filterFeature= '' ">All</button>
+  <button (click)="filterFeature='true'">In Stock</button>
+  <button (click)="filterFeature='false'">Out of Stock</button>
+</div>
+
+<div class="ekart--products--container">
+  <div *ngFor="let prod of generateFilter()" (click) = "selectedProduct = prod">
+    <div class="ekart--product--item" *ngIf="searchText ==='' ||prod.name.toLowerCase().includes(searchText)"
+   [routerLink]="'/products/product/' + prod.id">
+      <div class="ekart-wishlist-sale-container">
+        <div class="ekart--add--to--wishlist" (click)="prod.is_liked = !prod.is_liked">
+          <i title="Add to wishlist" [ngClass]="prod.is_liked === true ? 'liked fa fas fa-heart' : 'fa fa-heart-o'"
+            aria-hidden="true"></i>
+        </div>
+        <div class="ekart-on-sale-tag" *ngIf="prod.discountPrice">{{(100 - (prod.discountPrice/prod.price *
+          100)).toFixed(0)}}% OFF</div>
+      </div>
+      <div class="ekart--product--image">
+        <img [src]="prod.imageURL" class="ekart--product--image">
+      </div>
+      <div class="ekart--add--to--price">
+        {{prod.price}}
+      </div>
+      <div class="ekart--product--name">{{prod.name}}</div>
+      <div class="ekart--product--category">{{prod.gender}} . {{prod.category}} . {{prod.brand}}</div>
+      <div class="ekart--product--available-colors">{{prod.color.length}} Colors . Best Seller</div>
+      <div class="ekart--product--in--stock"
+        [ngStyle]="{fontWeight: 'bold' , color : prod.is_in_inventory ? 'Green' : 'Red' }">
+        {{prod.is_in_inventory ? 'IN STOCK' : 'OUT OF STOCK'}}
+      </div>
+    </div>
+  </div>
+
+</div>

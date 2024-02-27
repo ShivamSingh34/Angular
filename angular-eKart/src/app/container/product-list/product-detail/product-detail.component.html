@@ -1,0 +1,154 @@
+<div class="courses-detail-main-container">
+    <div class="course-detail-container">
+        <div class="course-details">
+            <div class="course-banner">
+                <img src="{{selectedProduct.imageURL}}" class="course-banner-image">
+            </div>
+            <div class="course-title">
+                <h1>{{selectedProduct.name}}</h1>
+            </div>
+            <div class="course-info">
+                <div class="course-info-rating"><b>Brand: </b>{{selectedProduct.brand}}</div>
+                <div class="course-info-duration"><b>Gender:</b>{{selectedProduct.gender}}</div>
+                <div class="course-info-author"><b>Category: </b>{{selectedProduct.category}}</div>
+            </div>
+            <div class="course-desc">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum 
+                    dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
+                    mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="course-fake-rewiews-list">
+                <h2>Customers Reviews</h2>
+                <hr>
+                <div class="course-fake-rewiews">
+                    <h3>Mark Stefan</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+
+                <div class="course-fake-rewiews">
+                    <h3>Josef Stalin</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                    </p>
+                </div>
+
+                <div class="course-fake-rewiews">
+                    <h3>Ravi Kumar</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        incididunt ut labore et m veniam, quis nostrud exercitation ullamco laboris 
+                        nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="course-action-items">
+            <div class="side-bar-banner">
+                <h2>Get Flat {{(100 - (selectedProduct.discountPrice/selectedProduct.price *
+                    100)).toFixed(0)}}%OFF on this product.</h2>
+            </div>
+            <div class="course-price-discount">
+                <span style="font-size: 20px; font-weight: bold; color: #222; margin:0px 3px;">{{selectedProduct.discountPrice}}</span>
+                <span style="font-size: 18px; font-weight: bold; color: #444; margin:0px 3px;"><s>{{selectedProduct.price}}</s></span>
+                <span style="font-size: 16px; color: #222">{{(100 - (selectedProduct.discountPrice/selectedProduct.price *
+                    100)).toFixed(0)}}%OFF</span>
+                <div class="offer-timer"
+                [ngStyle]="{fontWeight: 'bold' , color : selectedProduct.is_in_inventory ? 'Green' : 'Red' }">
+        {{selectedProduct.is_in_inventory ? 'Available in stock' : 'Not Available in stock'}}
+                    
+                </div>
+            </div>
+            <div class="buy-course-div">
+                <button class="buy-course-button">Buy this product</button>
+            </div>
+            <div class="guarantee-div">
+                <p>14-Days Return policy</p>
+            </div>
+            <div class="course-apply-coupon">
+                <a href="#">Apply coupon</a>
+            </div>
+            <div class="devider">
+            </div>
+            <div class="ekart-product-detail-size">
+                <div style="padding: 5px 0px;border-bottom: #ccc 2px solid">
+                    <h6 style="margin-left: 26px; font-weight: bold">Available Size</h6>
+                </div>
+                <diV style="margin-top: 20px">
+                    <span class="ekart-product-detail-available-size">6</span>
+                    <span class="ekart-product-detail-available-size">7</span>
+                    <span class="ekart-product-detail-available-size">8</span>
+                    <span class="ekart-product-detail-available-size">9</span>
+                </diV>                
+            </div>
+            
+        </div>
+    </div>    
+</div>
+
+
+
+
+
+
+
+
+
+<!-- <div class="ekart--product--details--info scroll">
+    <div class="ekart-product-detail-close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <div class="ekart-product-detail-image">
+        <img src="https://images.vans.com/is/image/Vans/MV122M-HERO?$583x583$" class="ekart-product-detail-image">
+    </div>
+    
+    <div class="ekart-product-detail">
+        <div class="ekart-product-detail-name">
+            <h2>Michael Feburary SK8-Hi</h2>
+        </div>
+        <div class="ekart-product-detail-gbc">
+            <span>MEN</span>
+            <span>NIKE</span>
+            <span>SPORTS</span>
+        </div>
+        <div class="ekart-product-detail-price">
+            <p>
+                <b>Price Each Pair:</b>
+                <span style="background-color: red; color:white"><s>$699</s></span>
+                <span style="background-color: green; color:white">$599</span> (Inclusive of all taxes)
+            </p>
+        </div>
+
+        <div class="ekart-product-detail-color">
+            <div style="padding: 5px 0px;border-bottom: #ccc 2px solid">
+                <h4>Available Color</h4>
+            </div>
+            <diV style="margin-top: 20px;">
+                <span class="ekart-product-detail-available-color" style="background-color: red;"></span>
+                <span class="ekart-product-detail-available-color" style="background-color: green;"></span>
+                <span class="ekart-product-detail-available-color" style="background-color: black;"></span>
+                <span class="ekart-product-detail-available-color" style="background-color: blue;"></span>
+            </diV>                
+        </div>
+
+        <div class="ekart-product-detail-desc">
+            <div style="padding: 5px 0px;border-bottom: #ccc 2px solid">
+                <h4>Product Description</h4>
+            </div>
+            <div style="margin-top: 20px">
+                <p>DESCRIPTION</p>
+            </div>                
+        </div>
+    </div>
+    <div class="ekart-product-detail-addtoCart">
+        <button class="btn-add-to-cart">ADD TO CART</button>
+    </div>
+</div>
+<div class="overlay"></div> -->

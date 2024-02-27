@@ -1,0 +1,179 @@
+.courses-detail-main-container{
+    width: 80%;
+    margin: 50px auto;
+    background-color: #efefef;
+    padding: 10px 0px;
+    overflow: hidden;
+}
+.course-detail-container{
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 10px;
+    display:flex;
+}
+.course-details{
+    width: 70%;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.course-banner-image{
+    margin-left: 25%;
+    width: 50%;
+    height: 320px;
+}
+.course-title{
+    margin: 10px 0px;
+    width: 100%;
+    text-align: center;
+}
+.course-info{
+    display: flex;
+    width: 100%;
+    margin: 10px 0px;
+}
+.course-info-rating, .course-info-duration,.course-info-author{
+    width: 33%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.course-desc{
+    padding: 30px 50px;
+    font-size: 14px;
+}
+
+.course-fake-rewiews-list{
+    padding: 30px 50px;
+    font-size: 14px;
+}
+
+hr{
+    margin: 10px 0px;
+    border: #DDD 2px solid;
+  }
+
+.course-fake-rewiews{
+    margin: 15px 0px;
+}
+
+.course-action-items{
+    width: 28%;
+    margin-left: 20px;
+    padding: 5px 5px;
+    background-color: #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.side-bar-banner{
+    width: 100%;
+    height: 200px;
+    background-color: rgb(241, 55, 55);
+    text-align: center;
+    padding: 30px 40px;
+    color:white;
+}
+.course-selection-cat, .course-apply-coupon{
+    display: flex;
+    width: 100%;
+}
+
+.course-selection-personal{
+    width: 50%;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: #28282B 2px solid;
+}
+.course-selection-team{
+    width: 50%;
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: #dddddd 2px solid;
+}
+.course-price-discount{
+    padding: 15px 20px;
+}
+.offer-timer{
+    text-align: center;
+    font-size: 14px;
+    padding: 5px 5px;
+}
+.buy-course-button{
+    padding: 10px 20px;
+    width: 90%;
+    margin: 10px 15px;
+    border: none;
+    background-color: #28282B;
+    color: white;
+    border-radius: 4px ;
+}
+
+.buy-course-button:hover{
+    transform: scale(1.1);
+}
+
+.guarantee-div{
+    width: 100%;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 12px;
+}
+.course-apply-coupon{
+    text-align: center;
+    margin-left: 55px;
+    font-weight: bold;
+}
+.devider{
+    border-bottom: #ddd 2px solid;
+    margin: 30px 0px;
+}
+.devider-message{
+    width: 30px;
+    height: 30px;
+    padding:4px 7px;
+    font-size: 12px;
+    border: #ddd 2px solid;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-bottom: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #888;
+}
+
+.prev-nect-course{
+    margin: 20px 0px;
+    padding: 30px 0px;
+}
+.prev-nect-course > button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #CB4335;
+    color:#ddd;
+}
+.prev-btn{
+    float: left;
+}
+.next-btn{
+    float: right;
+}
+
+.ekart-product-detail-size{
+    margin: 30px 20px 30px 45px;
+}
+span{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.ekart-product-detail-available-size{
+    margin: 0px 0px;
+    background-color: #28282B; 
+    color:white;
+    border-radius: 0px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+.ekart-product-detail-available-color{
+    border-radius: 50%;
+    padding: 8px 18px;
+}
